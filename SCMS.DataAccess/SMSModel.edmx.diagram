@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dd7164f3063f43a48a47867e34ecd550" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="SCMSModel.Address" Width="1.5" PointX="6" PointY="11.375" />
+        <EntityTypeShape EntityType="SCMSModel.AddressType" Width="1.5" PointX="3.75" PointY="8" />
+        <EntityTypeShape EntityType="SCMSModel.Assesment" Width="1.5" PointX="5.25" PointY="37.375" />
+        <EntityTypeShape EntityType="SCMSModel.AssesmentType" Width="1.5" PointX="3" PointY="38.5" />
+        <EntityTypeShape EntityType="SCMSModel.Assignment" Width="1.5" PointX="10.5" PointY="38" />
+        <EntityTypeShape EntityType="SCMSModel.Attendance" Width="1.5" PointX="8.5" PointY="13" />
+        <EntityTypeShape EntityType="SCMSModel.Batch" Width="1.5" PointX="6" PointY="30.125" />
+        <EntityTypeShape EntityType="SCMSModel.Branch" Width="1.5" PointX="3.75" PointY="28.25" />
+        <EntityTypeShape EntityType="SCMSModel.CalendarYear" Width="1.5" PointX="3.75" PointY="32.875" />
+        <EntityTypeShape EntityType="SCMSModel.Class" Width="1.5" PointX="8.25" PointY="7.125" />
+        <EntityTypeShape EntityType="SCMSModel.ClassType" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SCMSModel.DayOfTheWeek" Width="1.5" PointX="9" PointY="35.125" />
+        <EntityTypeShape EntityType="SCMSModel.Employee" Width="1.5" PointX="8.25" PointY="17.375" />
+        <EntityTypeShape EntityType="SCMSModel.EmployeeType" Width="1.5" PointX="6" PointY="8.625" />
+        <EntityTypeShape EntityType="SCMSModel.EnrolledStudent" Width="1.5" PointX="5.25" PointY="17.5" />
+        <EntityTypeShape EntityType="SCMSModel.Event" Width="1.5" PointX="11" PointY="1" />
+        <EntityTypeShape EntityType="SCMSModel.EventType" Width="1.5" PointX="8.75" PointY="1.75" />
+        <EntityTypeShape EntityType="SCMSModel.Exam" Width="1.5" PointX="7.5" PointY="37.875" />
+        <EntityTypeShape EntityType="SCMSModel.Location" Width="1.5" PointX="3" PointY="11.5" />
+        <EntityTypeShape EntityType="SCMSModel.NamespaceType" Width="1.5" PointX="0.75" PointY="11.625" />
+        <EntityTypeShape EntityType="SCMSModel.Result" Width="1.5" PointX="7.5" PointY="22.875" />
+        <EntityTypeShape EntityType="SCMSModel.Schedule" Width="1.5" PointX="4" PointY="2" />
+        <EntityTypeShape EntityType="SCMSModel.ScheduleDetail" Width="1.5" PointX="6.25" PointY="2" />
+        <EntityTypeShape EntityType="SCMSModel.School" Width="1.5" PointX="1.5" PointY="28.125" />
+        <EntityTypeShape EntityType="SCMSModel.Section" Width="1.5" PointX="10.5" PointY="7.875" />
+        <EntityTypeShape EntityType="SCMSModel.Subject" Width="1.5" PointX="8.25" PointY="30.75" />
+        <EntityTypeShape EntityType="SCMSModel.SubjectType" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SCMSModel.Teacher" Width="1.5" PointX="10.5" PointY="17.5" />
+        <EntityTypeShape EntityType="SCMSModel.TeacherType" Width="1.5" PointX="8.25" PointY="28.25" />
+        <EntityTypeShape EntityType="SCMSModel.TimeTable" Width="1.5" PointX="11.25" PointY="29.125" />
+        <EntityTypeShape EntityType="SCMSModel.User" Width="1.5" PointX="3" PointY="16.125" />
+        <EntityTypeShape EntityType="SCMSModel.vw_ActiveClassInformation" Width="1.5" PointX="12.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_ActiveEmployess" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_ActiveStudents" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_AttendanceView" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_RegisteredBranchPerCalendarYear" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_ResultView" Width="1.5" PointX="14.75" PointY="11.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_ScheduleView" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SCMSModel.vw_TeacherAssignedClassView" Width="1.5" PointX="16.75" PointY="6.75" />
+        <AssociationConnector Association="SCMSModel.FK_Address_AddressType" />
+        <AssociationConnector Association="SCMSModel.FK_Address_NamespaceType" />
+        <AssociationConnector Association="SCMSModel.FK_Assesments_AssesmentType" />
+        <AssociationConnector Association="SCMSModel.FK_Assesments_Batch" />
+        <AssociationConnector Association="SCMSModel.FK_Assesments_Class" />
+        <AssociationConnector Association="SCMSModel.FK_Assesments_Subject" />
+        <AssociationConnector Association="SCMSModel.FK_Assignment_Assesments" />
+        <AssociationConnector Association="SCMSModel.FK_Exam_Assesments" />
+        <AssociationConnector Association="SCMSModel.FK_Result_Assesments" />
+        <AssociationConnector Association="SCMSModel.FK_Assignment_Assignment" />
+        <AssociationConnector Association="SCMSModel.FK_Exam_AssesmentType" />
+        <AssociationConnector Association="SCMSModel.FK_Attendance_EnrolledStudent" />
+        <AssociationConnector Association="SCMSModel.FK_Attendance_ScheduleDetail" />
+        <AssociationConnector Association="SCMSModel.FK_Batch_Branch" />
+        <AssociationConnector Association="SCMSModel.FK_Batch_CalendarYear" />
+        <AssociationConnector Association="SCMSModel.FK_Employee_Batch" />
+        <AssociationConnector Association="SCMSModel.FK_EnrolledStudent_Batch" />
+        <AssociationConnector Association="SCMSModel.FK_TimeTable_Batch" />
+        <AssociationConnector Association="SCMSModel.FK_Branch_School" />
+        <AssociationConnector Association="SCMSModel.FK_Class_Batch" />
+        <AssociationConnector Association="SCMSModel.FK_Employee_Branch" />
+        <AssociationConnector Association="SCMSModel.FK_TimeTable_Branch" />
+        <AssociationConnector Association="SCMSModel.FK_EnrolledStudent_Class" />
+        <AssociationConnector Association="SCMSModel.FK_Schedule_Class" />
+        <AssociationConnector Association="SCMSModel.FK_Section_Class" />
+        <AssociationConnector Association="SCMSModel.FK_Subject_Class" />
+        <AssociationConnector Association="SCMSModel.FK_Teacher_Class" />
+        <AssociationConnector Association="SCMSModel.FK_TimeTable_DayOfTheWeek" />
+        <AssociationConnector Association="SCMSModel.FK_Employee_Employee" />
+        <AssociationConnector Association="SCMSModel.FK_Employee_EmployeeType" />
+        <AssociationConnector Association="SCMSModel.FK_Employee_User" />
+        <AssociationConnector Association="SCMSModel.FK_Teacher_Employee" />
+        <AssociationConnector Association="SCMSModel.FK_EnrolledStudent_User" />
+        <AssociationConnector Association="SCMSModel.FK_Result_EnrolledStudent" />
+        <AssociationConnector Association="SCMSModel.FK_Event_Event" />
+        <AssociationConnector Association="SCMSModel.FK_Location_NamespaceType" />
+        <AssociationConnector Association="SCMSModel.FK_User_NamespaceType" />
+        <AssociationConnector Association="SCMSModel.FK_Schedule_Subject" />
+        <AssociationConnector Association="SCMSModel.FK_ScheduleDetail_Schedule" />
+        <AssociationConnector Association="SCMSModel.FK_Teacher_Subject" />
+        <AssociationConnector Association="SCMSModel.FK_Teacher_TeacherType" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
